@@ -100,3 +100,10 @@ injectJS(URL_MathJAX, function () {
     _$('head')[0].appendChild(scriptConfig);
 	
 });
+
+// This highlights the referenced comment, if there is any in the URL 
+var comment_match = document.URL.match( /#comment_(\d+)$/ ); 
+if ( comment_match instanceof Array ) {
+    var comment = _$('div#comment-' + comment_match[1] + ' div.comment_wrapper div.comment_content')[0];
+    comment.style.backgroundColor = "#FFFFCC";
+}
