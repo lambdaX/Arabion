@@ -67,7 +67,7 @@ for (var i = 0; i < links.length; i++) {
     type = content.slice(-3).toLowerCase();
     if (IMAGES.indexOf(type) > -1) {
 	    
-	    links[i].innerHTML = "<img src='" + content + "' style='max-width:100%;'>";
+	    links[i].innerHTML = "<br><img src='" + content + "' style='max-width:100%;'><br>";
     }
 }
  
