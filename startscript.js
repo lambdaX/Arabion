@@ -96,7 +96,7 @@ injectJS(URL_MathJAX, function () {
     // inject mathJax config
     var scriptConfig = document.createElement("script");
     scriptConfig.type = "text/x-mathjax-config"
-    scriptConfig.innerText = "MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'] ]}});"
+    scriptConfig.innerText = "MathJax.Hub.Config({tex2jax: {inlineMath: [['#$','$'] ]}});"
     _$('head')[0].appendChild(scriptConfig);
 	
 });
