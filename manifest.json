@@ -1,6 +1,6 @@
 {
     "content_scripts": [{
-        "matches": ["http://arabia.io/*/*"],
+        "matches": ["https://arabia.io/*/*","http://arabia.io/*/*"],
         "js": [
  
             "startscript.js"
@@ -10,7 +10,7 @@
     "description": "UNOFFICIAL Browser Extension for Arabia.io's users.",
     "manifest_version": 2,
     "name": "Arabion",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "icons": {
         "128": "assets/arabion128.png",
         "16": "assets/arabion16.png",
